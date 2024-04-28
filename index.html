@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f2f4f7; }
+        .header { background-color: #69a6ce; color: #ffffff; padding: 20px; text-align: center; }
+        .nav { padding: 10px; }
+        .nav button { background-color: #fde192; border: none; padding: 10px; margin: 5px; cursor: pointer; border-radius: 5px; }
+        .product { background-color: #ffffff; padding: 20px; margin: 20px 0; border-radius: 5px; text-align: center; }
+        .product img { max-width: 100px; height: auto; border-radius: 5px; }
+        .footer { background-color: #69a6ce; color: #ffffff; text-align: center; padding: 10px; margin-top: 20px; }
+        form { background-color: #ffffff; padding: 20px; margin: 20px 0; border-radius: 5px; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        input[type=submit] { background-color: #69a6ce; color: #ffffff; cursor: pointer; border: none; padding: 10px; border-radius: 5px; }
+    </style>
+    <title>Milk Company Site</title>
+</head>
+<body>
+
+<div class="header">
+    <h1>Welcome to MilkWorld!</h1>
+    <div class="nav">
+        <button>Home</button><button>Products</button>
+    </div>
+</div>
+
+<div class="product">
+    <img src="milk-product.jpg" alt="Milk Product">
+    <h2>Premium Organic Milk</h2>
+    <p>This premium organic milk is sourced from grass-fed cows treated with loving care.</p>
+</div>
+
+<div class="footer">
+    &copy; 2023 MilkWorld, All rights reserved
+</div>
+
+<form>
+    <h2>Get in Touch!</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+    <input type="submit" value="Send Message">
+</form>
+
+<script>
+    // Example JavaScript for functionality
+    document.querySelectorAll('.nav button').
